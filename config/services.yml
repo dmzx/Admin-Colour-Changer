@@ -1,0 +1,9 @@
+services:
+    dmzx.admincolourchanger.listener:
+        class: dmzx\admincolourchanger\event\listener
+        arguments:
+            - @request
+            - @template
+            - @user
+        tags:
+            - { name: event.listener }
